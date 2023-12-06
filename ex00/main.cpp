@@ -6,10 +6,12 @@
 /*   By: evallee- <evallee-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 17:51:53 by evallee-          #+#    #+#             */
-/*   Updated: 2023/12/05 19:18:19 by evallee-         ###   ########.fr       */
+/*   Updated: 2023/12/06 15:54:34 by evallee-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "WrongAnimal.hpp"
+#include "WrongCat.hpp"
 #include "Animal.hpp"
 #include "Cat.hpp"
 #include "Dog.hpp"
