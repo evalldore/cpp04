@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: niceguy <niceguy@student.42.fr>            +#+  +:+       +#+        */
+/*   By: evallee- <evallee-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 17:51:53 by evallee-          #+#    #+#             */
-/*   Updated: 2023/12/06 21:23:00 by niceguy          ###   ########.fr       */
+/*   Updated: 2023/12/07 14:24:11 by evallee-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,13 @@
 
 int	main(void)
 {
-	std::auto_ptr<AAnimal> array[20];
-	int	i;
+	AAnimal*	array[20];
+	int			i;
 
 	for (i = 0; i < 10; i++)
-		array[i].reset(new Dog());
+		array[i] = new Dog();
 	for (i = 10; i < 20; i++)
-		array[i].reset(new Cat());
+		array[i] = new Cat();
 	
 	for (i = 0; i < 20; i++)
 	{
@@ -32,4 +32,7 @@ int	main(void)
 		std::cout << std::endl;
 	}
 	std::cout << std::endl;
+
+	for (i = 0; i < 20; i++)
+		delete array[i];
 }
