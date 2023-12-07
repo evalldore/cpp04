@@ -6,7 +6,7 @@
 /*   By: evallee- <evallee-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 17:53:51 by evallee-          #+#    #+#             */
-/*   Updated: 2023/12/06 15:54:24 by evallee-         ###   ########.fr       */
+/*   Updated: 2023/12/07 16:30:16 by evallee-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ class WrongAnimal {
 		WrongAnimal(void);
 		virtual ~WrongAnimal(void);
 
-		virtual void	makeSound(void) const;
+		void	makeSound(void) const;
 		const std::string&	getType(void) const;
 	protected :
 		std::string		_type;
