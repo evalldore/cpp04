@@ -6,7 +6,7 @@
 /*   By: evallee- <evallee-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 17:51:53 by evallee-          #+#    #+#             */
-/*   Updated: 2023/12/07 15:04:09 by evallee-         ###   ########.fr       */
+/*   Updated: 2023/12/08 17:42:01 by evallee-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 #include "Cat.hpp"
 #include "Dog.hpp"
 
-int	main(void)
+/*static void	collection(void)
 {
+	std::cout << "COLLECTION\n" << std::endl;
 	Animal*	array[20];
 	int			i;
 
@@ -37,4 +38,21 @@ int	main(void)
 		delete array[i];
 		array[i] = NULL;
 	}
+}*/
+
+static void copy(void)
+{
+	std::cout << "\nCOPY\n" << std::endl;
+
+	Cat	ca;
+	Cat cb;
+	Cat cc;
+
+	cc = ca;
+}
+
+int	main(void)
+{
+	//collection();
+	copy();
 }

@@ -1,4 +1,4 @@
-NAME			:= polymorphism
+NAME			:= brain
 CPPFLAGS		:= -Wall -Wextra -Werror -std=c++98
 SRCS			:= main.cpp Animal.cpp Cat.cpp Dog.cpp Brain.cpp
 BINDIR			:= bin/

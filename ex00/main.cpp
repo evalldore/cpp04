@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: niceguy <niceguy@student.42.fr>            +#+  +:+       +#+        */
+/*   By: evallee- <evallee-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 17:51:53 by evallee-          #+#    #+#             */
-/*   Updated: 2023/12/06 20:12:01 by niceguy          ###   ########.fr       */
+/*   Updated: 2023/12/07 16:35:40 by evallee-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 
 int	main(void)
 {
-
 	std::cout << "CONTRUCTORS\n" << std::endl;
 	
 	const WrongAnimal wanimal;

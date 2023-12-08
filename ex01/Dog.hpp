@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: niceguy <niceguy@student.42.fr>            +#+  +:+       +#+        */
+/*   By: evallee- <evallee-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/05 18:37:37 by evallee-          #+#    #+#             */
-/*   Updated: 2023/12/06 20:25:03 by niceguy          ###   ########.fr       */
+/*   Created: 2023/12/05 18:18:54 by evallee-          #+#    #+#             */
+/*   Updated: 2023/12/08 16:24:27 by evallee-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,12 @@
 #include "Brain.hpp"
 
 class Dog : public Animal {
-	public:
+	public :
 		Dog(void);
+		Dog(const Dog& other);
 		~Dog(void);
 		void	makeSound(void) const;
-	private:
+		const Dog& operator=(const Dog& other);
+	private :
 		Brain	*_brain;
 };
