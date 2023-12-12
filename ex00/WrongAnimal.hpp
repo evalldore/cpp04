@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evallee- <evallee-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: niceguy <niceguy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 17:53:51 by evallee-          #+#    #+#             */
-/*   Updated: 2023/12/07 16:30:16 by evallee-         ###   ########.fr       */
+/*   Updated: 2023/12/12 14:53:12 by niceguy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,12 @@
 class WrongAnimal {
 	public :
 		WrongAnimal(void);
+		WrongAnimal(const WrongAnimal& other);
 		virtual ~WrongAnimal(void);
 
 		void	makeSound(void) const;
 		const std::string&	getType(void) const;
+		const WrongAnimal &operator=(const WrongAnimal& other);
 	protected :
 		std::string		_type;
 };

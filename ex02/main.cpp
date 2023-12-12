@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evallee- <evallee-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: niceguy <niceguy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 17:51:53 by evallee-          #+#    #+#             */
-/*   Updated: 2023/12/08 17:53:07 by evallee-         ###   ########.fr       */
+/*   Updated: 2023/12/12 15:04:06 by niceguy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ int	main(void)
 	Cat c;
 	Dog d;
 
-	Cat *hc = new Cat();
-	Dog *dc = new Dog();
+	Cat *hc = new Cat(c);
+	Dog *dc = new Dog(d);
 
 	delete hc;
 	delete dc;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evallee- <evallee-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: niceguy <niceguy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 17:51:53 by evallee-          #+#    #+#             */
-/*   Updated: 2023/12/07 16:35:40 by evallee-         ###   ########.fr       */
+/*   Updated: 2023/12/12 14:57:32 by niceguy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,50 @@ int	main(void)
 	std::cout << "Dog of class Dog makes this sound: ";
 	dog2.makeSound();
 	std::cout << std::endl;
+
+	std::cout << "\nCOPY\n" << std::endl;
+
+	const Animal RealAnimal;
+	const Animal CopyAnimal(RealAnimal);
+
+	const WrongAnimal RealWrongAnimal;
+	const WrongAnimal CopyWrongAnimal(RealWrongAnimal);
+
+	const WrongCat RealWrongCat;
+	const WrongCat CopyWrongCat(RealWrongCat);
+
+	const Cat RealCat;
+	const Cat CopyCat(RealCat);
+
+	const Dog RealDog;
+	const Dog CopyDog(RealDog);
+
+	std::cout << "\nAssignement\n" << std::endl;
+
+	WrongCat OtherWrongCat;
+	WrongCat AssignWrongCat;
+
+	AssignWrongCat = OtherWrongCat;
+
+	WrongAnimal OtherWrongAnimal;
+	WrongAnimal AssignWrongAnimal;
+
+	AssignWrongAnimal = OtherWrongAnimal;
+
+	Animal OtherAnimal;
+	Animal AssignAnimal;
+
+	AssignAnimal = OtherAnimal;
+
+	Cat OtherCat;
+	Cat AssignCat;
+
+	AssignCat = OtherCat;
+
+	Dog OtherDog;
+	Dog AssignDog;
+
+	AssignDog = OtherDog;
 
 	std::cout << "\nDESTRUCTORS\n" << std::endl;
 }

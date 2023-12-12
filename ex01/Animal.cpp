@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evallee- <evallee-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: niceguy <niceguy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 18:02:04 by evallee-          #+#    #+#             */
-/*   Updated: 2023/12/08 16:33:58 by evallee-         ###   ########.fr       */
+/*   Updated: 2023/12/12 14:46:18 by niceguy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ const Animal& Animal::operator=(const Animal& other)
 {
 	if (this == &other)
 		return (*this);
+	std::cout << "Animal copy operator!" << std::endl;
 	this->_type = other._type;
 	return (*this);
 }

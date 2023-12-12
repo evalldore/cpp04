@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: evallee- <evallee-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: niceguy <niceguy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 18:02:04 by evallee-          #+#    #+#             */
-/*   Updated: 2023/12/05 19:14:37 by evallee-         ###   ########.fr       */
+/*   Updated: 2023/12/12 14:31:50 by niceguy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,12 @@
 Animal::Animal() {
 	_type = "Animal";
 	std::cout << "Animal default constructor!" << std::endl;
+}
+
+Animal::Animal(const Animal& other) {
+	_type = other._type;
+	*this = other;
+	std::cout << "Animal copy constructor!" << std::endl;
 }
 
 Animal::~Animal() {
@@ -28,4 +34,13 @@ const std::string& Animal::getType() const {
 
 void Animal::makeSound() const {
 	std::cout << "The money got different";
+}
+
+const Animal& Animal::operator=(const Animal& other)
+{
+	if (this == &other)
+		return (*this);
+	std::cout << "Animal copy operator!" << std::endl;
+	this->_type = other._type;
+	return (*this);
 }
