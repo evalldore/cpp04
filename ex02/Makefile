@@ -1,6 +1,6 @@
 NAME			:= polymorphism
 CPPFLAGS		:= -Wall -Wextra -Werror -std=c++98
-SRCS			:= main.cpp Animal.cpp Cat.cpp Dog.cpp Brain.cpp
+SRCS			:= main.cpp Animal.cpp Cat.cpp Dog.cpp
 BINDIR			:= bin/
 OBJS			:= $(addprefix $(BINDIR), $(SRCS:.cpp=.o))
 RM				:= rm -f
